@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <h2>Des citations aléatoires</h2>
+    <p class="p1">Chaque fois que vous cliquez sur le bouton, vous verrez un citation aleatoire :</p>
+
+    <div class="div">
+        <button  onclick="idi()">Générer un citation aléatoire</button>
+        <p id="demon"></p>
+    
+   
+    <script>
+         let name= ["Je ne vais pas mal. Mais rassurez-vous, un jour, je ne manquerai pas de mourir.", 
+          "Celui qui accepte le mal sans lutter contre lui coopère avec lui.", 
+          "Quand on veut on peut, quand on peut on doit.", "Quand la guerre sonne , les amitiés n'existent plus", 
+          "L'amitié est comme une lumière à une fenêtre pendant une nuit noire.", 
+          "La vie c’est la conscience et l’inconscience ; la mort, ni l’une ni l’autre.", 
+          "Pour l’Homme, la Vie se conjugue en trois temps : il est, il sera et il était.", 
+          "La mort c'est la finale, le sommeil c'est l'entrainement.", 
+          "Dans la sagesse, il y a le sage, dans le sage, il y a l’âge. Il n’y a pas d’âge pour être sage.", 
+          "L'esprit vieillit dans la sagesse et le corps dans la souffrance", 
+          "L'homme sage est celui qui ne parle et n'agit qu'avec réflexion et discernement.", 
+          "La connaissance parle, mais la sagesse écoute. ", 
+          "Méfies-toi du beau parleur : imite les sages, ne prononce qu'une parole, mais qu'elle soit sensée.", 
+          "La vie est un rêve pour le sage, un jeu pour le fou, une comédie pour les riches, une tragédie pour les pauvres.", 
+          "Le sage sans jamais faire de grandes actions, accomplit de grandes choses.", 
+          "La nature est là pour l’homme ; mais, l’homme, est-il là pour la nature ? Là est la question", 
+          "C'est la Nature qui fait l'Homme.", "Les belles nuits font les beaux jours !", 
+          "Rien n'est beau que le vrai : le vrai seul est aimable.", 
+          "Exige beaucoup de toi-même et attends peu des autres. Ainsi beaucoup d'ennuis te seront épargnés.", 
+          "Choisissez un travail que vous aimez et vous n'aurez pas à travailler un seul jour de votre vie.", 
+          "Trois sortes d'amis sont utiles, trois sortes d'amis sont néfastes. Les utiles : un ami droit, un ami fidèle, un ami cultivé. Les néfastes : un ami faux, un ami mou, un ami bavard.", 
+          "La nature fait les hommes semblables, la vie les rend différents.", "Agis avec gentillesse, mais n'attends pas de la reconnaissance.", 
+          "Lorsque l'on se cogne la tête contre un pot et que cela sonne creux, ça n'est pas forcément le pot qui est vide.", 
+          "Sous un bon gouvernement, la pauvreté est une honte ; sous un mauvais gouvernement, la richesse est aussi une honte.", 
+          "Je ne cherche pas à connaître les réponses, je cherche à comprendre les question.", 
+          "Notre plus grande gloire n'est point de tomber, mais de savoir nous relever chaque fois que nous tombons.", 
+          "Nulle pierre ne peut être polie sans friction, nul homme ne peut parfaire son expérience sans épreuve."
+        ];
+         function idi() {
+            let randomIndex = Math.floor(Math.random()*name.length);
+            let randomName = name[randomIndex];
+            document.getElementById("demon").innerHTML = randomName;
+           
+            
+        }
+    </script>
+    </div>
+</body>
+</html>

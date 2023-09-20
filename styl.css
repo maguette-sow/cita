@@ -1,0 +1,31 @@
+body{
+    background-color: azure;
+}
+.div{
+    background-color: rgb(252, 170, 70);
+    margin: 40px 300px;
+    padding: 30px 5px;
+}
+h2{
+    text-align: center;
+    margin-top: 100px;
+}
+p{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+.p1{
+    color: black;
+}
+
+button{
+    margin-left: 220px;
+    
+    padding: 20px 5px;
+    border: 10px solid gray;
+    font-size: 20px;
+    border-radius: 15px;
+  box-shadow: 0 9px #999;
+    
+}
